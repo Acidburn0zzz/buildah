@@ -51,7 +51,8 @@ build images.  The flexibility of building images without Dockerfiles allows
 for the integration of other scripting languages into the build process.
 Buildah follows a simple fork-exec model and does not run as a daemon
 but it is based on a comprehensive API in golang, which can be vendored
-into other tools.
+into other tools.  Podman uses Buildah's golang API for the podman-build
+command.
 
 Podman specializes in all of the commands and functions that help you to maintain and modify
 OCI images, such as pulling and tagging.  It also allows you to create, run, and maintain those containers
